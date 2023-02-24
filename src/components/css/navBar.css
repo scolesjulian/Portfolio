@@ -1,0 +1,145 @@
+*{
+    scroll-behavior: smooth;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(135deg,#008a83de,#e06b7fcb);
+    position: fixed;
+    padding: 0.4%;
+    box-shadow: 0px 14px 20px -12px rgba(82,62,62,0.75);
+    z-index: 99;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 35%;
+    list-style: none;
+    padding: 0;
+}
+
+.smoothscroll{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.smoothscroll-dark{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.smoothscroll:hover, .smoothscroll-dark:hover{
+    color: rgba(0, 0, 0, 0.644);
+    transform: sacle(1.1);
+}
+
+.row-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 16% 0 2% 0;
+}
+
+.row-banner-dark{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 16% 0 2% 0;
+    color:white;
+}
+
+.hello-world{
+    font-size: 2rem;
+}
+
+.responsive-headline{
+    font-size: 5rem;
+    background-image: linear-gradient(135deg,#008a83de,#e42646cb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    margin-bottom: 2%;
+    letter-spacing: 1.5px;
+}
+
+.socials-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 15%;
+    padding-right: 2%;
+}
+
+.mode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.social{
+    display: flex;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+}
+.social-dark{
+    display: flex;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.social:hover, .social-dark:hover {
+    color: rgba(0, 0, 0, 0.644);
+}
+
+
+@media all and (max-width: 900px) {
+    .navBar{
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .social{
+        display: none;
+    }
+
+    .social-dark{
+        display: none;
+    }
+
+    .navBar{
+        width: 100%;
+    }
+
+    .row-banner{
+        margin: 40% 1% 20% 1%;
+    }
+    .row-banner-dark{
+        margin: 40% 1% 20% 1%;
+    }
+
+    .responsive-headline{
+        text-align: center;
+    }
+}

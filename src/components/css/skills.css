@@ -1,0 +1,50 @@
+#resume{
+    width: 100%;
+}
+
+.row-skill{
+    margin: 6% 0;
+    padding: 2% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.numerated-skills{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1% 10% 5% 10%;
+}
+
+.skill{
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.skill-dark{
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    color: white;
+}
+
+.skill:hover, .skill-dark:hover{
+    transform: scale(1.1);
+}
+
+@media all and (max-width: 500px) {
+    .row-skill{
+        margin: 15% 0;
+    }
+}
